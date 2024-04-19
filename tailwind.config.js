@@ -5,6 +5,9 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      'inknut': ['Inknut Antiqua', 'serif'],
+    },
     extend: {},
   },
   plugins: [],

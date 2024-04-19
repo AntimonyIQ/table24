@@ -1,10 +1,27 @@
 
 
+/*
+*|   Header, Footer, Body content
+*|   Logo, Get started, Pricing, Knowledge Area
+*/
+
+import HeaderComponent from "./header";
+
 export default function IndexPage() {
     
     return (
-        <div className="text-[40px]">
-            Hello Table24
-        </div>
+        <main>
+            <section id="header">
+                <HeaderComponent />
+            </section>
+                
+            <section id="body-context">
+            
+            </section>
+                
+            <section id="footer">
+            
+            </section>
+        </main>
     );
 }
