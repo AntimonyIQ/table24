@@ -1,10 +1,8 @@
 import { useState } from "react";
-import { logo } from "../../assets/assest";
-
+import { logo } from '../../assets/assest';
 
 export default function HeaderComponent() {
     const [menuOpen, setMenuOpen] = useState(false);
-    
     
     return (
         <div 
@@ -35,7 +33,9 @@ export default function HeaderComponent() {
                 
             </div>
             
-            <div className=" md:hidden" onClick={() => setMenuOpen(true)}>menu</div>
+            <div className=" md:hidden" onClick={() => setMenuOpen(true)}>
+                <svg width="24" height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 17a2 2 0 1 1 0 4 2 2 0 0 1 0-4Zm7 0a2 2 0 1 1 0 4 2 2 0 0 1 0-4ZM5 17a2 2 0 1 1 0 4 2 2 0 0 1 0-4Zm7-7a2 2 0 1 1 0 4 2 2 0 0 1 0-4Zm7 0a2 2 0 1 1 0 4 2 2 0 0 1 0-4ZM5 10a2 2 0 1 1 0 4 2 2 0 0 1 0-4Zm7-7a2 2 0 1 1 0 4 2 2 0 0 1 0-4Zm7 0a2 2 0 1 1 0 4 2 2 0 0 1 0-4ZM5 3a2 2 0 1 1 0 4 2 2 0 0 1 0-4Z" fill="#222F3D"/></svg>
+            </div>
         </div>
     );
 }

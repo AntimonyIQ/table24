@@ -1,10 +1,5 @@
 
-
-/*
-*|   Header, Footer, Body content
-*|   Logo, Get started, Pricing, Knowledge Area
-*/
-
+import FooterComponent from "./footer";
 import HeaderComponent from "./header";
 
 export default function IndexPage() {
@@ -20,7 +15,7 @@ export default function IndexPage() {
             </section>
                 
             <section id="footer">
-            
+                <FooterComponent />
             </section>
         </main>
     );
